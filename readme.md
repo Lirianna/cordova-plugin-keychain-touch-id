@@ -23,6 +23,14 @@ $ cordova prepare
 
 touchid.js is brought in automatically. There is no need to change or add anything in your html.
 
+Add a `FACEID_USAGE_DESCRIPTION` to the plugin in the `fetch.json` file:
+
+```json "variables": {
+      "FACEID_USAGE_DESCRIPTION": "place your usage description here"
+    }
+```
+Make sure that the variable text matches the string text in the config.xml file (see [config.xml](###config.xml)).
+
 ### Manually
 
 1\. Add the following xml to your `config.xml` in the root directory of your `www` folder:
