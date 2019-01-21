@@ -25,7 +25,8 @@ touchid.js is brought in automatically. There is no need to change or add anythi
 
 Add a `FACEID_USAGE_DESCRIPTION` to the plugin in the `fetch.json` file:
 
-```json "variables": {
+```json
+"variables": {
       "FACEID_USAGE_DESCRIPTION": "place your usage description here"
     }
 ```
@@ -72,7 +73,7 @@ if (window.plugins.touchid) {
 
 Call the function you like
 
-**isAvailable(successCallback(biometryType), errorCallback(msg))** will Check if touchid is available on the used device. The `successCallback` gets the `biometryType` argument with 'face' on iPhone X, 'touch' on other devices.
+**isAvailable(successCallback(biometryType), errorCallback(msg))** will Check if touchid is available on the used device. The `successCallback` gets the `biometryType` argument with 'face' on phones with FaceID, 'OK' on devices with both touch and face enabled and 'touch' on other devices.
 
 **save(key,password, successCallback, errorCallback(msg))**
 will save a password under the key in the device keychain, which can be retrieved using a fingerprint. 
