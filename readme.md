@@ -81,6 +81,20 @@ will check if there is a password stored within the keychain for the given key
 **delete(key,successCallback, errorCallback)**
 will delete the password stored under given key from the keychain
 
+## iOS quirks
+
+iOS11+ requires a `NSFaceIDUsageDescription` to enable FaceID. Add this to config.xml
+
+### Config.xml
+
+```xml
+<config-file parent="NSFaceIDUsageDescription" target="*-Info.plist">
+        <string>Aktivering af Face ID giver dig hurtig og sikker adgang til din pensionsopsparing.</string>
+</config-file>
+
+```
+
+
 ## Android quirks
 
 When a new fingerprint is enrolled, no more fingerprints are enrolled, secure lock screen is disabled or forcibly reset,
