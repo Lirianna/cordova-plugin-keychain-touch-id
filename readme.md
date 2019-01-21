@@ -83,13 +83,13 @@ will delete the password stored under given key from the keychain
 
 ## iOS quirks
 
-iOS11+ requires a `NSFaceIDUsageDescription` to enable FaceID. Add this to config.xml
+iOS11+ requires a description `NSFaceIDUsageDescription` of why you wish to enable FaceID. Add this to config.xml and write your description in the string. Your description will be shown to the user, when activating FaceID is prompted.
 
 ### Config.xml
 
 ```xml
 <config-file parent="NSFaceIDUsageDescription" target="*-Info.plist">
-        <string>Aktivering af Face ID giver dig hurtig og sikker adgang til din pensionsopsparing.</string>
+        <string>place your usage description text here.</string>
 </config-file>
 
 ```
