@@ -30,7 +30,7 @@ Add a `FACEID_USAGE_DESCRIPTION` to the plugin in the `fetch.json` file:
       "FACEID_USAGE_DESCRIPTION": "place your usage description here"
     }
 ```
-Make sure that the variable text matches the string text in the config.xml file (see [config.xml](###configxml)).
+Make sure that the variable text matches the string text in the config.xml file (see [config.xml](#configxml)).
 
 ### Manually
 
